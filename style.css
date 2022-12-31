@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Poppins', sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: antiquewhite;
+}
+section{
+    z-index: 100;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color:transparent;
+    color: #fff;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: larger;
+    padding: 20px;
+    margin-left: 10px;
+}
+nav .logo{
+    width: 200px;
+    margin-left: -80px;
+}
+.main{
+    margin-top: 200px;
+}
+
+.tital{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 160px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: transparent;
+    
+}
+h1{
+    transition: 0.5s;
+}
+h1:hover{
+    color: #fff;
+}
+.start{
+    height: 0px;
+    display: flex;
+    justify-content: center;
+}
+.line{
+    margin-top: -20px;
+    width: 10%;
+    height: 5px;
+    border-radius: 5rem;
+    background-color: rgba(255, 255, 255, 0.733);
+    z-index: 110;
+}
+
+
+
+
+
+.p-tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    font-size: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: transparent;
+    width: 10%;
+    border-radius: 3rem;
+    border: 2px solid #fff
+    
+}
+p{
+    transition: 0.5s;
+}
+p:hover{
+    background-color: rgba(230, 203, 173, 0.26);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 200;
+}
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
